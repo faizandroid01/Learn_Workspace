@@ -131,6 +131,19 @@ Eg-
 REGISTER THE PATH URL in base urls.py
 
     path('',include('courses.urls')),
+	
+-----------------------------------------------------------------------
+
+Flow of a django program. 
+
+MODEL -> SEARIALIZER(MODEL) -> VIEWS (SERIALIZER AND MODEL) - INCLUDES DB TRANSACTIONS  -> APP_ROUTER (VIEWS)  -> DJANGO ROUTER (CALLS APP ROUTER)
+
+* Required Register Model
+
+
+
+
+
 
 
    

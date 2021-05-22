@@ -1,0 +1,20 @@
+Settings of the attributes in @Transactional annotation:		
+		
+propagation — Optional setting for propagation. This is a very important attribute in setting the transactional behavior. I will cover a use case of it below.		
+REQUIRED — support a current transaction, create a new one if none exist		
+REQUIRES_NEW — create a new transaction and suspend the current transaction if none exist		
+MANDATORY — support a current transaction, throw an exception if none exists		
+NESTED — executes within a nested transaction if a current transaction exists		
+SUPPORTS — supports currents transaction but execute non-transactionally if none exists		
+isolation — transaction isolation level. It decides the level to what the transaction should be isolated to other transactions		
+DEFAULT — default isolation level of the datasource		
+READ_COMMITTED — indicates dirty reads to be prevented, non-repeatable, and phantom reads can occur.		
+READ_UNCOMMITTED — indicates that dirty reads, non-repeatable, and phantom reads can occur		
+REPEATABLE_READ — indicates dirty and non-repeatable reads are prevented but phantom reads can occur		
+SERIALIZABLE — indicates dirty read phantom read, and non-repeatable reads are prevented		
+readOnly — whether the transaction is read-only or read/write		
+timeout — transaction timeout		
+rollbackFor — arrays of exception class objects that must cause a rollback of the transaction		
+rollbackForClassName — arrays of exception class names that must cause a rollback of the transaction		
+noRollbackFor — arrays of exception class objects that must not cause a rollback of the transaction		
+noRollbackForClassName — arrays of exception class names that must not cause a rollback of the transaction		
